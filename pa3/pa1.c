@@ -282,14 +282,14 @@ int main(int argc, char* argv[]){
     for(int i = 0; i < num_process; i++){
         BalanceHistory cur = history.s_history[i];
         int len = cur.s_history_len;
-        //printf("\t%d\n", i);
+        printf("\t%d\n", i);
         for(int j = 0; j < len; j++){
             if(maxtime < cur.s_history[j].s_time)
                 maxtime = cur.s_history[j].s_time;
-            //printf("(%d,%d,%d); ", cur.s_history[j].s_balance, 
-            //                    cur.s_history[j].s_time,
-            //                    cur.s_history[j].s_balance_pending_in);
-        //printf("\n");
+            printf("(%d,%d,%d); ", cur.s_history[j].s_balance, 
+                                cur.s_history[j].s_time,
+                                cur.s_history[j].s_balance_pending_in);
+        printf("\n");
         }
     }
 
@@ -297,8 +297,8 @@ int main(int argc, char* argv[]){
 
     for(int i = 0; i < num_process; i++) {
         BalanceHistory h = {.s_id = i+1,
-                            .s_history_len = num_process };
-        for(int j = 0; j < num_process; j++) {
+                            .s_history_len = maxtime + 1 };
+        for(int j = 0; j < maxtime+1; j++) {
             BalanceState s = { .s_balance = atoi(argv[i + 3]),
                                .s_time = j };
             h.s_history[j] = s;
@@ -313,7 +313,7 @@ int main(int argc, char* argv[]){
 
         for(int j = 0; j < len; j++){
             //printf("! (%d, %d) %d\n",i,j, cur.s_history[j].s_balance);
-            for(int k = cur.s_history[j].s_time; k < num_process + 1; k++)
+            for(int k = cur.s_history[j].s_time; k <= maxtime; k++)
                 final_history.s_history[i].s_history[k].s_balance -= cur.s_history[j].s_balance;
             for(int k = 0; k < 2; k++)
              final_history.s_history[i].s_history[cur.s_history[j].s_time + k].s_balance +=
