@@ -1,0 +1,12 @@
+Process 1 (pid 16559, parent 16558) has STARTED
+Process 1 received all STARTED messages
+Process 1 has DONE its work
+Process 1 received all DONE messages
+Process 2 (pid 16560, parent 16558) has STARTED
+Process 2 received all STARTED messages
+Process 2 has DONE its work
+Process 2 received all DONE messages
+Process 3 (pid 16561, parent 16558) has STARTED
+Process 3 received all STARTED messages
+Process 3 has DONE its work
+Process 3 received all DONE messages
