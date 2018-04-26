@@ -1,12 +1,12 @@
-Process 1 (pid 17204, parent 17203) has STARTED
+Process 1 (pid 30785, parent 30784) has STARTED
 Process 1 received all STARTED messages
 Process 1 has DONE its work
 Process 1 received all DONE messages
-Process 2 (pid 17205, parent 17203) has STARTED
+Process 2 (pid 30786, parent 30784) has STARTED
 Process 2 received all STARTED messages
 Process 2 has DONE its work
 Process 2 received all DONE messages
-Process 3 (pid 17206, parent 17203) has STARTED
+Process 3 (pid 30787, parent 30784) has STARTED
 Process 3 received all STARTED messages
 Process 3 has DONE its work
 Process 3 received all DONE messages
