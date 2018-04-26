@@ -1,12 +1,12 @@
-Process 1 (pid 48927, parent 48926) has STARTED
+Process 1 (pid 29731, parent 29730) has STARTED
 Process 1 received all STARTED messages
 Process 1 has DONE its work
 Process 1 received all DONE messages
-Process 2 (pid 48928, parent 48926) has STARTED
+Process 2 (pid 29732, parent 29730) has STARTED
 Process 2 received all STARTED messages
 Process 2 has DONE its work
 Process 2 received all DONE messages
-Process 3 (pid 48929, parent 48926) has STARTED
+Process 3 (pid 29733, parent 29730) has STARTED
 Process 3 received all STARTED messages
 Process 3 has DONE its work
 Process 3 received all DONE messages
