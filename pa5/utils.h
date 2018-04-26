@@ -41,3 +41,10 @@ int flush(IPC* ipc);
 int set_dr(IPC* ipc, int worker_id);
 int set_received(IPC* ipc, int worker_id);
 int check_is_received_all(IPC* ipc);
+
+int send_reply(void* ipc, local_id to);
+int send_stop(void* ipc);
+int close_unused_pipes(IPC* ipc);
+int sync_workers(IPC* ipc);
+int init_pipes(IPC* ipc);
+int init_logs(IPC* ipc);

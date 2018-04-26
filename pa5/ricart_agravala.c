@@ -9,7 +9,6 @@ int flush(IPC* ipc){
     return 0;
 }
 
-
 int set_dr(IPC* ipc, int worker_id){
     ipc -> ra.deferred_reply[worker_id - 1] = 1;
 
