@@ -14,4 +14,8 @@ typedef struct {
     int descs[MAX_WORKERS + 1][MAX_WORKERS + 1][2];
 } IPC;
 
-
+int init_pipes(IPC* ipc);
+int init_logs(IPC* ipc);
+int sync_workers(IPC* ipc);
+int close_unused_pipes(IPC* ipc);
+int get_options(int argc, char* argv[], int* num_process);
